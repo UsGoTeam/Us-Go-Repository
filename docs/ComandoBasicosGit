@@ -1,0 +1,38 @@
+****SÓLO PARA LA PRIMERA VEZ*****
+-Crear repositorio de un directorio:
+git init <ruta_directorio>
+-O bien clonar repositorio:
+git clone https://github.com/UsGoTeam/Us-Go-Repository.git
+
+-Hay que configurar nuestro usuario:
+git config --global user.name "<Tu nombre>"
+git config --global user.email "<Tu email>"
+
+-Hay que indicar a git la url de nuestro repositorio remoto:
+git remote add origin https://github.com/UsGoTeam/Us-Go-Repository.git
+
+
+*********RUTINA PARA TRABAJAR CON GIT*************
+-Realizar cambios y comprobar con:
+git status
+
+-Añadir al tracking las modificaciones:
+git add <files/directory>
+
+-Realizar commit para añadir cambios realizados al staging area agregando comentario:
+git commit -m "<Comentario del commit>"
+
+-Guardar los cambios en remoto:
+git push origin main
+
+
+******OTROS COMANDOS QUE UTILIZAREMOS*******
+-Crear rama nueva:
+git branch <nombre_rama_nueva>
+
+-Cambiar de rama:
+git checkout <nombre_rama>
+
+
+
+
