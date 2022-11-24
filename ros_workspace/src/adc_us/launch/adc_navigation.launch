@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- -->
+<launch>
+
+  <arg name="name"                    default="adc_car"/>
+  <arg name="output"                  default="screen" />
+  <arg name="launch_prefix"           default="" />
+  <arg name="move_base_params"        default="move_base_params.yaml"/>
+  <arg name="costmap_common_params"   default="common_params.yaml"/>
+  <arg name="costmap_local_params"    default="local_params.yaml"/>
+  <arg name="costmap_global_params"   default="global_params.yaml"/>
+  <arg name="map_path"                default="$(find iri_adc_launch)/maps/sample"/>
+  <arg name="map_name"                default="sample" />
+
+  <arg name="car_x"                       default="0.0"/>
+  <arg name="car_y"                       default="0.0"/>
+  <arg name="car_yaw"                     default="0.0"/>
+
+  <include file="$(find iri_rosnav)/launch/nav.launch">
+    <arg name="ns"                      value="$(arg name)"/>
+    <arg name="path"                    value="$(find iri_adc_launch)/config/adc_rosnav"/>
+    <arg name="move_base_params"        value="move_base_params.yaml"/>
+    <arg name="costmap_common_params"   value="common_params.yaml"/>
+    <arg name="costmap_local_params"    value="local_params.yaml"/>
+    <arg name="costmap_global_params"   value="global_params.yaml"/>
+    <arg name="map_frame_id"            value="map"/>
+    <arg name="odom_frame_id"           value="$(arg name)/odom"/>
+    <arg name="base_frame_id"           value="$(arg name)/base_footprint"/>
+    <arg name="map_topic"               value="/$(arg name)/map"/>
+    <arg name="map_service"             value="/$(arg name)/static_map"/>
+    <arg name="odom_topic"              value="/$(arg name)/local_odom_combined"/>
+    <arg name="cmd_vel_topic"           value="/$(arg name)/navigation/cmd_vel"/>
+    <arg name="scan_topic"              value="/$(arg name)/sensors/scan"/>
+    <arg name="use_map"                 value="true"/>
+    <arg name="use_map_server"          value="true"/> 
+    <arg name="map_path"                value="$(arg map_path)"/>
+    <arg name="map_name"                value="$(arg map_name)"/>
+    <arg name="use_amcl"                value="false"/>
+    <arg name="amcl_config"             value="$(find iri_adc_launch)/config/adc_rosnav/amcl_no_tf.yaml"/>
+    <arg name="initial_x"               value="$(arg car_x)"/>
+    <arg name="initial_y"               value="$(arg car_y)"/>
+    <arg name="initial_yaw"             value="$(arg car_yaw)"/>
+    <arg name="use_fake_loc"            value="false"/>
+    <arg name="use_gmapping"            value="false"/>
+    <arg name="local_planner"           value="ackermann"/>
+    <arg name="global_planner"          value="iri_opendrive"/>
+    <arg name="output"                  value="$(arg output)" />
+    <arg name="launch_prefix"           value="$(arg launch_prefix)" />
+  </include>
+
+  
+</launch>
