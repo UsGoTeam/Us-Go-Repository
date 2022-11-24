@@ -4,7 +4,6 @@
 
   <arg name="output"                      default="screen"/>
   <arg name="launch_prefix"               default=""/>
-
   <arg name="gazebo_gui"                  default="True"/>
   <arg name="car_x"                       default="0.0"/>
   <arg name="car_y"                       default="0.0"/>
