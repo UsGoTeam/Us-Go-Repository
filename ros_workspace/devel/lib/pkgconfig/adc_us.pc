@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/devel
+
+Name: adc_us
+Description: Description of adc_us
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
