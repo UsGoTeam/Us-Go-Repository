@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
-<!-- -->
 <launch>
 
   <arg name="name"                    default="adc_car"/>
@@ -47,6 +46,4 @@
     <arg name="output"                  value="$(arg output)" />
     <arg name="launch_prefix"           value="$(arg launch_prefix)" />
   </include>
-
-  
 </launch>
