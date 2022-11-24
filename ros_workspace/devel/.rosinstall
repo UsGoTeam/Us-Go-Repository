@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/leon/Us-Go-Repository/ros_workspace/devel/setup.sh

@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="AdcJuryAlgorithm" pkg="iri_adc_jury" type="AdcJuryAlgorithm">
+  <param name="rate" type="double" value="10.0" />
+  <param name="start" type="bool" value="False" />
+</node>
+\endverbatim
+

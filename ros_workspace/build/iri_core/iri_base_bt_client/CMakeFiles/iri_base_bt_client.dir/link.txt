@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libiri_base_bt_client.so -o /home/leon/Us-Go-Repository/ros_workspace/devel/lib/libiri_base_bt_client.so CMakeFiles/iri_base_bt_client.dir/src/iri_bt_basic_nodes.cpp.o 

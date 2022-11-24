@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/devel
+
+Name: iri_model_car_msgs
+Description: Description of iri_model_car_msgs
+Version: 0.0.0
+Cflags: -I/home/leon/Us-Go-Repository/ros_workspace/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

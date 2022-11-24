@@ -1,0 +1,13 @@
+\subsubsection usage Usage
+\verbatim
+<node name="ImuMsgFixAlgorithm" pkg="iri_imu_msg_fix" type="ImuMsgFixAlgorithm">
+  <param name="fix_frame_id" type="bool" value="False" />
+  <param name="frame_id" type="str" value="" />
+  <param name="fix_cov" type="bool" value="False" />
+  <param name="cov_orientation" type="double" value="0.01" />
+  <param name="cov_vel" type="double" value="1e-06" />
+  <param name="cov_acc" type="double" value="1e-06" />
+  <param name="imu_reference" type="int" value="0" />
+</node>
+\endverbatim
+

@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/devel
+
+Name: iri_ranger1d_gazebo
+Description: Description of iri_ranger1d_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

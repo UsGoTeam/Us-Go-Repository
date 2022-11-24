@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/install
+
+Name: iri_behaviortree
+Description: Description of iri_behaviortree
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -liri_behaviortree
+Requires: behaviortree_cpp_v3

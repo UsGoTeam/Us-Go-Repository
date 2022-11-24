@@ -1,0 +1,35 @@
+###iri_core/
+- git:
+    local-name: iri_core/iri_action_server
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/iri_core/iri_action_server.git
+    version: master
+- git:
+    local-name: iri_core/iri_base_algorithm
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/iri_core/iri_base_algorithm.git
+    version: master
+- git:
+    local-name: iri_core/iri_base_driver
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/iri_core/iri_base_driver.git
+    version: master
+- git:
+    local-name: iri_core/iri_ros_tools
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/iri_core/iri_ros_tools.git
+    version: master
+- git:
+    local-name: iri_core/iri_ros_scripts
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/iri_core/iri_ros_scripts.git
+    version: master
+- git:
+    local-name: iri_core/iri_behaviortree
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/iri_core/iri_behaviortree.git
+    version: master
+- git:
+    local-name: iri_core/iri_base_bt_client
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/iri_core/iri_base_bt_client.git
+    version: master
+
+###iri_ros
+- git:
+    local-name: iri_ros_how_to
+    uri: https://git@gitlab.iri.upc.edu/labrobotica/ros/iri_ros_how_to.git
+    version: master

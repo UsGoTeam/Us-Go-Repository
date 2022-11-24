@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/install
+
+Name: iri_model_car_description
+Description: Description of iri_model_car_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

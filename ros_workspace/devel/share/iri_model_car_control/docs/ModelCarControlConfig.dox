@@ -1,0 +1,20 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~rate" : \b [double] Main loop rate (Hz) min: 0.1, default: 10.0, max: 1000.0
+- \b "~speed_Kp" : \b [double] Proportional constant of the speed PID min: 0.0, default: 1.0, max: 1000.0
+- \b "~speed_Ki" : \b [double] Integral constant of the speed PID min: 0.0, default: 0.0, max: 1000.0
+- \b "~speed_Kd" : \b [double] Differential constant of the speed PID min: 0.0, default: 0.0, max: 1000.0
+- \b "~speed_i_max" : \b [double] Maximum integral value pf the speed PID min: 0.0, default: 10.0, max: 1000.0
+- \b "~speed_deadband" : \b [double] Minimum valid speed command min: 0.1, default: 0.1, max: 1.0
+- \b "~watchdog_time" : \b [double] Maximum time between two control commands min: 0.0, default: 0.5, max: 1000.0
+- \b "~axel_distance" : \b [double] Distance between the two axels in meters min: 0.0, default: 0.36, max: 10.0
+- \b "~max_steer_angle" : \b [double] Maximum steering angle min: -1.0, default: 0.4, max: 1.0
+- \b "~min_steer_angle" : \b [double] Minimum steering angle min: -1.0, default: -0.4, max: 1.0
+- \b "~max_speed_control" : \b [double] Maximum output speed command value min: -100.0, default: 10.0, max: 100.0
+- \b "~min_speed_control" : \b [double] Minimum output speed command value min: -100.0, default: -10.0, max: 100.0
+- \b "~max_steer_control" : \b [double] Maximum output steer command value min: -100.0, default: 10.0, max: 100.0
+- \b "~min_steer_control" : \b [double] Minimum output steer command value min: -100.0, default: -10.0, max: 100.0
+- \b "~use_steer_angle_cmd" : \b [bool] Whether to use steer angle or angular speed as input min: False, default: False, max: True
+

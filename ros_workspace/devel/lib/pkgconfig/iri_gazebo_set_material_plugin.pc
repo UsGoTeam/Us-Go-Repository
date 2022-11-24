@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/devel
+
+Name: iri_gazebo_set_material_plugin
+Description: Description of iri_gazebo_set_material_plugin
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: gazebo_plugins message_runtime std_msgs

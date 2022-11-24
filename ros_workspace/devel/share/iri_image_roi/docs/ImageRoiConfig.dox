@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~rate" : \b [double] Main loop rate (Hz) min: 0.1, default: 10.0, max: 1000.0
+- \b "~roi_x_offset" : \b [int] X start of the ROI min: 0, default: 0, max: 10000
+- \b "~roi_y_offset" : \b [int] Y start of the ROI min: 0, default: 0, max: 10000
+- \b "~roi_width" : \b [int] Width of the ROI min: 0, default: 0, max: 10000
+- \b "~roi_height" : \b [int] Height of the ROI min: 0, default: 0, max: 10000
+- \b "~output_format" : \b [str] Color format of the output image min: , default: , max: 
+

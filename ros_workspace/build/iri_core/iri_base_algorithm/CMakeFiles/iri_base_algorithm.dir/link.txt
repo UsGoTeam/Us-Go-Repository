@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libiri_base_algorithm.so -o /home/leon/Us-Go-Repository/ros_workspace/devel/lib/libiri_base_algorithm.so  

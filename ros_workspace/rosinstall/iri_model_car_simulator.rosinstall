@@ -1,0 +1,30 @@
+###############################################
+### iri_model_car_simulator.rosinstall
+###############################################
+### platforms/model_car/
+- git:
+    local-name: platforms/model_car/simulator/iri_model_car_gazebo
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/simulator/iri_model_car_gazebo.git
+    version: master
+- git:
+    local-name: platforms/model_car/simulator/iri_model_car_controller
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/simulator/iri_model_car_controller.git
+    version: master
+###############################################
+### sensors/
+- git:
+    local-name: sensors/imu/iri_imu_gazebo
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/imu/iri_imu_gazebo.git
+    version: master
+- git:
+    local-name: sensors/mono_cameras/iri_camera_gazebo
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/mono_cameras/iri_camera_gazebo.git
+    version: master
+- git:
+    local-name: sensors/ranger1d/iri_ranger1d_gazebo
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/ranger1d/iri_ranger1d_gazebo.git
+    version: master
+- git:
+    local-name: sensors/ranger2d/iri_laser2d_gazebo
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/ranger2d/iri_laser2d_gazebo.git
+    version: master

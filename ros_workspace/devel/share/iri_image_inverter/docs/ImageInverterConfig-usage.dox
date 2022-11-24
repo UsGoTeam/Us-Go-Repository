@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="ImageInverterAlgorithm" pkg="iri_image_inverter" type="ImageInverterAlgorithm">
+  <param name="rate" type="double" value="10.0" />
+  <param name="invert" type="bool" value="True" />
+</node>
+\endverbatim
+

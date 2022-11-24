@@ -1,0 +1,21 @@
+\subsubsection usage Usage
+\verbatim
+<node name="ModelCarControlAlgorithm" pkg="iri_model_car_control" type="ModelCarControlAlgorithm">
+  <param name="rate" type="double" value="10.0" />
+  <param name="speed_Kp" type="double" value="1.0" />
+  <param name="speed_Ki" type="double" value="0.0" />
+  <param name="speed_Kd" type="double" value="0.0" />
+  <param name="speed_i_max" type="double" value="10.0" />
+  <param name="speed_deadband" type="double" value="0.1" />
+  <param name="watchdog_time" type="double" value="0.5" />
+  <param name="axel_distance" type="double" value="0.36" />
+  <param name="max_steer_angle" type="double" value="0.4" />
+  <param name="min_steer_angle" type="double" value="-0.4" />
+  <param name="max_speed_control" type="double" value="10.0" />
+  <param name="min_speed_control" type="double" value="-10.0" />
+  <param name="max_steer_control" type="double" value="10.0" />
+  <param name="min_steer_control" type="double" value="-10.0" />
+  <param name="use_steer_angle_cmd" type="bool" value="False" />
+</node>
+\endverbatim
+

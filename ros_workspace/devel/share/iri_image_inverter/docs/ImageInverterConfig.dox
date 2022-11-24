@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~rate" : \b [double] Main loop rate (Hz) min: 0.1, default: 10.0, max: 1000.0
+- \b "~invert" : \b [bool] Invert image colors min: False, default: True, max: True
+

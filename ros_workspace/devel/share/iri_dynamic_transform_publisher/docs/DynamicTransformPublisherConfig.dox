@@ -1,0 +1,18 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~broadcast" : \b [bool] enable broadcasting min: False, default: True, max: True
+- \b "~parent_id" : \b [str] parent frame id min: , default: parent, max: 
+- \b "~frame_id" : \b [str] child frame id min: , default: child, max: 
+- \b "~period" : \b [double] period in ms min: 0.0, default: 100.0, max: 10000.0
+- \b "~reset_translation" : \b [bool] reset x y z offsets to zero min: False, default: False, max: True
+- \b "~x" : \b [double] x offset in meters min: -10000.0, default: 0.0, max: 10000.0
+- \b "~y" : \b [double] y offset in meters min: -10000.0, default: 0.0, max: 10000.0
+- \b "~z" : \b [double] z offset in meters min: -10000.0, default: 0.0, max: 10000.0
+- \b "~reset_rotation" : \b [bool] reset roll pitch yaw to zero min: False, default: False, max: True
+- \b "~roll" : \b [double] roll rotation in radians min: -3.14159, default: 0.0, max: 3.14159
+- \b "~pitch" : \b [double] pitch rotation in radians min: -3.14159, default: 0.0, max: 3.14159
+- \b "~yaw" : \b [double] yaw rotation in radians min: -3.14159, default: 0.0, max: 3.14159
+- \b "~show_rosrun" : \b [bool] outputs ROS_INFO with rosrun equivalent min: False, default: False, max: True
+

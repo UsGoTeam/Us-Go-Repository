@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="ImageRoiAlgorithm" pkg="iri_image_roi" type="ImageRoiAlgorithm">
+  <param name="rate" type="double" value="10.0" />
+  <param name="roi_x_offset" type="int" value="0" />
+  <param name="roi_y_offset" type="int" value="0" />
+  <param name="roi_width" type="int" value="0" />
+  <param name="roi_height" type="int" value="0" />
+  <param name="output_format" type="str" value="" />
+</node>
+\endverbatim
+

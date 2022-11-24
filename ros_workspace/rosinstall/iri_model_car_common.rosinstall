@@ -1,0 +1,68 @@
+###############################################
+### iri_model_car_common.rosinstall
+###############################################
+### platforms/model_car/
+- git:
+    local-name: platforms/model_car/iri_model_car_how_to
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/iri_model_car_how_to.git
+    version: master
+- git:
+    local-name: platforms/model_car/iri_model_car_rosnav
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/iri_model_car_rosnav.git
+    version: master
+- git:
+    local-name: platforms/model_car/iri_model_car_description
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/iri_model_car_description.git
+    version: master
+- git:
+    local-name: platforms/model_car/iri_model_car_msgs
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/iri_model_car_msgs.git
+    version: master
+- git:
+    local-name: platforms/model_car/iri_model_car_control
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/iri_model_car_control.git
+    version: master
+- git:
+    local-name: platforms/model_car/iri_model_car_odometry
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/iri_model_car_odometry.git
+    version: master
+- git:
+    local-name: platforms/model_car/iri_model_car_launch
+    uri: https://gitlab.iri.upc.edu/mobile_robotics/adc/platforms/model_car/iri_model_car_launch.git
+    version: master
+###############################################
+### sensors/
+- git:
+    local-name: sensors/imu/iri_mpu9250_imu_description
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/imu/iri_mpu9250_imu_description.git
+    version: master
+- git:
+    local-name: sensors/imu/iri_imu_msg_fix
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/imu/iri_imu_msg_fix.git
+    version: master
+- git:
+    local-name: sensors/mono_cameras/iri_uvc_camera_description
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/mono_cameras/iri_uvc_camera_description.git
+    version: master
+- git:
+    local-name: sensors/ranger1d/iri_hcsr04_sonar_description
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/ranger1d/iri_hcsr04_sonar_description.git
+    version: master
+- git:
+    local-name: sensors/ranger2d/iri_rplidar_laser2d_description
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/sensors/ranger2d/iri_rplidar_laser2d_description.git
+    version: master
+###############################################
+### navigation/
+- git:
+    local-name: navigation/iri_ackermann_local_planner
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/navigation/iri_ackermann_local_planner.git
+    version: master
+- git:
+    local-name: navigation/iri_rosnav
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/navigation/iri_rosnav.git
+    version: master
+- git:
+    local-name: navigation/iri_teleop_launch
+    uri: https://gitlab.iri.upc.edu/labrobotica/ros/navigation/iri_teleop_launch.git
+    version: master

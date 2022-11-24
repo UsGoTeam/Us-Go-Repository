@@ -1,0 +1,20 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~rate" : \b [double] Main loop rate (Hz) min: 0.1, default: 10.0, max: 1000.0
+- \b "~odom_frame" : \b [str] Name of the odometry frame min: , default: odom, max: 
+- \b "~robot_frame" : \b [str] Name of the robot frame min: , default: base_footprint, max: 
+- \b "~encoder_ticks" : \b [int] Number of encoder ticks per revolution min: 1, default: 60, max: 1000
+- \b "~wheel_diameter" : \b [double] Diameter of the wheel in meters min: 0.01, default: 0.108, max: 1000.0
+- \b "~wheel_distance" : \b [double] Distance between wheels in meters min: 0.01, default: 0.265, max: 1000.0
+- \b "~axel_distance" : \b [double] Distance betweena axels in meters min: 0.01, default: 0.36, max: 1.0
+- \b "~enable_filter" : \b [bool] Enable the low pass filter for the encoder data min: False, default: True, max: True
+- \b "~filter_coeff" : \b [double] Coefficient for the first order low pass filter min: 0.01, default: 0.3, max: 1.0
+- \b "~speed_deadband" : \b [double] Minimum valid speed command min: 0.1, default: 0.1, max: 1.0
+- \b "~max_steer_angle" : \b [double] Maximum steering angle min: -1.0, default: 0.4, max: 1.0
+- \b "~min_steer_angle" : \b [double] Minimum steering angle min: -1.0, default: -0.4, max: 1.0
+- \b "~max_steer_control" : \b [double] Maximum output steer command value min: -100.0, default: 10.0, max: 100.0
+- \b "~min_steer_control" : \b [double] Minimum output steer command value min: -100.0, default: -10.0, max: 100.0
+- \b "~publish_tf" : \b [bool] Publish or not the TF transform min: False, default: True, max: True
+

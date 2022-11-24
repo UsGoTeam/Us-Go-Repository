@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/install
+
+Name: iri_image_inverter
+Description: Description of iri_image_inverter
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: iri_base_algorithm cv_bridge image_transport camera_info_manager sensor_msgs

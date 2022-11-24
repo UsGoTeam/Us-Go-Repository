@@ -1,0 +1,19 @@
+\subsubsection usage Usage
+\verbatim
+<node name="DynamicTransformPublisherAlgorithm" pkg="iri_dynamic_transform_publisher" type="DynamicTransformPublisherAlgorithm">
+  <param name="broadcast" type="bool" value="True" />
+  <param name="parent_id" type="str" value="parent" />
+  <param name="frame_id" type="str" value="child" />
+  <param name="period" type="double" value="100.0" />
+  <param name="reset_translation" type="bool" value="False" />
+  <param name="x" type="double" value="0.0" />
+  <param name="y" type="double" value="0.0" />
+  <param name="z" type="double" value="0.0" />
+  <param name="reset_rotation" type="bool" value="False" />
+  <param name="roll" type="double" value="0.0" />
+  <param name="pitch" type="double" value="0.0" />
+  <param name="yaw" type="double" value="0.0" />
+  <param name="show_rosrun" type="bool" value="False" />
+</node>
+\endverbatim
+

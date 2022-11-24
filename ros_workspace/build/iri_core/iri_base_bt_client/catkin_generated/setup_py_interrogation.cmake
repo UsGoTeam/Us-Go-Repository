@@ -1,0 +1,7 @@
+set(iri_base_bt_client_SETUP_PY_SETUP_MODULE "distutils.core")
+set(iri_base_bt_client_SETUP_PY_VERSION "1.0.0")
+set(iri_base_bt_client_SETUP_PY_SCRIPTS "")
+set(iri_base_bt_client_SETUP_PY_PACKAGES "iri_base_bt_client")
+set(iri_base_bt_client_SETUP_PY_PACKAGE_DIRS "src/iri_base_bt_client")
+set(iri_base_bt_client_SETUP_PY_MODULES "")
+set(iri_base_bt_client_SETUP_PY_MODULE_DIRS "")

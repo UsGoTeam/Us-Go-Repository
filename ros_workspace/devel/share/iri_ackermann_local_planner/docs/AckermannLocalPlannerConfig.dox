@@ -1,0 +1,55 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~max_sim_time" : \b [double] The amount of time to roll trajectories out for in seconds min: 0.0, default: 10.0, max: 20.0
+- \b "~min_sim_time" : \b [double] The amount of time to roll trajectories out for in seconds min: 0.0, default: 1.7, max: 10.0
+- \b "~sim_granularity" : \b [double] The granularity with which to check for collisions along each trajectory in meters min: 0.0, default: 0.025, max: std::numeric_limits<double>::infinity()
+- \b "~angular_sim_granularity" : \b [double] The granularity with which to check for collisions for rotations in radians min: 0.0, default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~path_distance_bias" : \b [double] The weight for the path distance part of the cost function min: 0.0, default: 32.0, max: std::numeric_limits<double>::infinity()
+- \b "~goal_distance_bias" : \b [double] The weight for the goal distance part of the cost function min: 0.0, default: 24.0, max: std::numeric_limits<double>::infinity()
+- \b "~occdist_scale" : \b [double] The weight for the obstacle distance part of the cost function min: 0.0, default: 0.01, max: std::numeric_limits<double>::infinity()
+- \b "~stop_time_buffer" : \b [double] The amount of time that the robot must stop before a collision in order for a trajectory to be considered valid in seconds min: 0.0, default: 0.2, max: std::numeric_limits<double>::infinity()
+- \b "~oscillation_reset_dist" : \b [double] The distance the robot must travel before oscillation flags are reset, in meters min: 0.0, default: 0.05, max: std::numeric_limits<double>::infinity()
+- \b "~oscillation_reset_angle" : \b [double] The angle the robot must turn before oscillation flags are reset, in radians min: 0.0, default: 0.2, max: std::numeric_limits<double>::infinity()
+- \b "~forward_point_distance" : \b [double] The distance from the center point of the robot to place an additional scoring point, in meters min: -std::numeric_limits<double>::infinity(), default: 0.325, max: std::numeric_limits<double>::infinity()
+- \b "~scaling_speed" : \b [double] The absolute value of the velocity at which to start scaling the robot's footprint, in m/s min: 0.0, default: 0.25, max: std::numeric_limits<double>::infinity()
+- \b "~max_scaling_factor" : \b [double] The maximum factor to scale the robot's footprint by min: 0.0, default: 0.2, max: std::numeric_limits<double>::infinity()
+- \b "~trans_vel_samples" : \b [int] The number of samples to use when exploring the x velocity space min: 1, default: 3, max: 2147483647
+- \b "~steer_angle_samples" : \b [int] The number of samples to use when exploring the steer angle space min: 1, default: 10, max: 2147483647
+- \b "~angular_vel_samples" : \b [int] The number of samples to use when exploring the angular velocity space min: 1, default: 10, max: 2147483647
+- \b "~use_steer_angle_cmd" : \b [bool] Whether to use the steer angle or the angular velocity. min: False, default: False, max: True
+- \b "~invert_steer_angle_cmd" : \b [bool] Whether to use the invert the steer angle command or not. min: False, default: False, max: True
+- \b "~use_stopped_steering" : \b [bool] Whether to allow steering while stopped or not. min: False, default: True, max: True
+- \b "~stopped_steering_angle_threshold" : \b [double] Angle difference threshold (rad) to perform steering change while stopped. min: 0.0, default: 0.05, max: std::numeric_limits<double>::infinity()
+- \b "~use_stuck_check" : \b [bool] Whether to allow robot stuck check or not. min: False, default: True, max: True
+- \b "~stuck_check_vel_threshold" : \b [double] Velocity threshold (m/s) to consider robot stuck. min: 0.0, default: 0.05, max: std::numeric_limits<double>::infinity()
+- \b "~stuck_check_max_occurrences" : \b [int] Max number of stuck occurrences allowed until moving to next segment or replaning. min: 0, default: 10, max: 2147483647
+- \b "~prune_plan" : \b [bool] Start following closest point of global plan, not first point (if different). min: False, default: False, max: True
+- \b "~xy_goal_tolerance" : \b [double] Within what maximum distance we consider the robot to be in goal min: -std::numeric_limits<double>::infinity(), default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~yaw_goal_tolerance" : \b [double] Within what maximum angle difference we consider the robot to face goal direction min: -std::numeric_limits<double>::infinity(), default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~trans_stopped_vel" : \b [double] Below what maximum velocity we consider the robot to be stopped in translation min: -std::numeric_limits<double>::infinity(), default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~rot_stopped_vel" : \b [double] Below what maximum rotation velocity we consider the robot to be stopped in rotation min: -std::numeric_limits<double>::infinity(), default: 0.1, max: std::numeric_limits<double>::infinity()
+- \b "~restore_defaults" : \b [bool] Restore to the original configuration. min: False, default: False, max: True
+- \b "~max_trans_vel" : \b [double] maximum translational speed min: 0.0, default: 0.3, max: 20.0
+- \b "~min_trans_vel" : \b [double] minimum translational speed min: -20.0, default: -0.3, max: 0.0
+- \b "~max_trans_acc" : \b [double] maximum translational acceleration min: 0.0, default: 1.0, max: 20.0
+- \b "~max_steer_angle" : \b [double] maximum steer angle min: 0.0, default: 0.45, max: 0.54
+- \b "~min_steer_angle" : \b [double] minimum steer angle min: -0.54, default: -0.45, max: 0.0
+- \b "~max_steer_vel" : \b [double] maximum steer speed min: 0.0, default: 1.0, max: 2.0
+- \b "~min_steer_vel" : \b [double] minimum steer speed min: -2.0, default: -1.0, max: 0.0
+- \b "~max_steer_acc" : \b [double] maximum steer acceleration min: 0.0, default: 0.36, max: 5.0
+- \b "~max_angular_vel" : \b [double] maximum angular speed min: 0.0, default: 0.3, max: 20.0
+- \b "~min_angular_vel" : \b [double] minimum angular speed min: -20.0, default: -0.3, max: 0.0
+- \b "~axis_distance" : \b [double] distance between axes min: -2.0, default: 1.65, max: 2.0
+- \b "~wheel_distance" : \b [double] distance between wheels min: 0.0, default: 1.2, max: 2.0
+- \b "~wheel_radius" : \b [double] Wheel diameter min: 0.0, default: 0.436, max: 2.0
+- \b "~use_trans_vel_deadzone" : \b [bool] Whether to use a deadzone in the translational velocity or not min: False, default: False, max: True
+- \b "~trans_vel_deadzone" : \b [double] Translatinal velocity minimum value min: 0.01, default: 0.1, max: 1.0
+- \b "~split_ignore_length" : \b [double] Paths segments under this length will be ignored min: 0.0, default: 1.0, max: 2.0
+- \b "~cmd_vel_avg" : \b [int] Number of cmd_vel to average min: 1, default: 1, max: 20
+- \b "~odom_avg" : \b [int] Number of odom to average min: 1, default: 1, max: 20
+- \b "~planner_patience" : \b [int] number of impossible paths before replanning min: 0, default: 2, max: 10
+- \b "~hdiff_scale" : \b [double] The weight for the heading distance part of the cost function min: 0.0, default: 1.0, max: 500.0
+- \b "~heading_points" : \b [int] The number of points to check the heading min: 1, default: 8, max: 64
+

@@ -1,0 +1,2 @@
+set(iri_adc_msgs_MESSAGE_FILES "msg/adc_goal.msg;msg/adc_goal_array.msg;msg/feature.msg;msg/feature_array.msg;msg/adc_opendrive_nodes.msg;msg/adc_juryAction.msg;msg/adc_juryActionGoal.msg;msg/adc_juryActionResult.msg;msg/adc_juryActionFeedback.msg;msg/adc_juryGoal.msg;msg/adc_juryResult.msg;msg/adc_juryFeedback.msg")
+set(iri_adc_msgs_SERVICE_FILES "srv/get_opendrive_map.srv;srv/get_opendrive_nodes.srv;srv/set_semaphore.srv;srv/set_car_lights.srv;srv/set_string.srv;srv/set_goals.srv;srv/jury_mode.srv")

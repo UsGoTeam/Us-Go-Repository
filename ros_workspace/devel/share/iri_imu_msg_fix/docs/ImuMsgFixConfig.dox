@@ -1,0 +1,12 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~fix_frame_id" : \b [bool] enable frame_id fix min: False, default: False, max: True
+- \b "~frame_id" : \b [str] frame_id name to override msg with min: , default: , max: 
+- \b "~fix_cov" : \b [bool] enable covariance fix min: False, default: False, max: True
+- \b "~cov_orientation" : \b [double] orientation covariance value to be set min: 0.0, default: 0.01, max: 100.0
+- \b "~cov_vel" : \b [double] velocity covariance value to be set min: 0.0, default: 1e-06, max: 100.0
+- \b "~cov_acc" : \b [double] acceleration covariance value to be set min: 0.0, default: 1e-06, max: 100.0
+- \b "~imu_reference" : \b [int] IMU reference system min: 0, default: 0, max: 1
+

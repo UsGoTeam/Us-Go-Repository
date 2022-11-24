@@ -1,0 +1,8 @@
+prefix=/home/leon/Us-Go-Repository/ros_workspace/install
+
+Name: iri_base_bt_client
+Description: Description of iri_base_bt_client
+Version: 1.0.0
+Cflags: -I${prefix}/include -I/usr/include
+Libs: -L${prefix}/lib -liri_base_bt_client /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_thread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so /usr/lib/x86_64-linux-gnu/libpthread.so
+Requires: roscpp dynamic_reconfigure diagnostic_updater behaviortree_cpp_v3 iri_behaviortree
